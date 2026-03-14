@@ -23,21 +23,21 @@ These technologies were chosen to keep the solution simple, lightweight, and eas
 junior-python-developer-assessment
 │
 ├── app
-│ ├── db.py
-│ ├── models.py
-│ ├── schemas.py
-│ └── main.py
+│   ├── db.py
+│   ├── models.py
+│   ├── schemas.py
+│   └── main.py
 │
 ├── data
-│ ├── customers.csv
-│ └── orders.csv
+│   ├── customers.csv
+│   └── orders.csv
 │
 ├── scripts
-│ ├── init_db.py
-│ └── export_active_customers.py
+│   ├── init_db.py
+│   └── export_active_customers.py
 │
 ├── output
-│ └── active_customers_orders.csv
+│   └── active_customers_orders.csv
 │
 ├── requirements.txt
 └── README.md
