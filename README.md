@@ -1,12 +1,14 @@
 # Junior Python Developer Assessment
 
-This project implements a small data processing and API system as part of the Junior Python/AWS Developer selection task.
+This project implements a small data processing and API system as part of the **Junior Python/AWS Developer selection task**.
 
 The system includes:
 
 - A repeatable database setup script
 - A REST API for retrieving customer and order information
 - A data extraction and transformation script that exports results to CSV
+
+---
 
 # Technology Stack
 
@@ -18,8 +20,11 @@ The system includes:
 
 These technologies were chosen to keep the solution simple, lightweight, and easy to run locally while still following modern Python development practices.
 
+---
+
 # Project Structure
 
+```text
 junior-python-developer-assessment
 │
 ├── app
@@ -41,20 +46,29 @@ junior-python-developer-assessment
 │
 ├── requirements.txt
 └── README.md
+```
+
+---
 
 # Setup Instructions
 
 Clone the repository and install dependencies.
 
-python3 -m venv venv 
-source venv/bin/activate 
+```bash
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
+```
+
+---
 
 # Database Setup
 
 Run the database initialization script:
 
+```bash
 python scripts/init_db.py
+```
 
 This script:
 
@@ -64,74 +78,104 @@ This script:
 
 The script is **repeatable**. Running it multiple times will not create duplicate records.
 
+---
+
 # Running the API
 
 Start the FastAPI server:
 
+```bash
 uvicorn app.main:app --reload
+```
 
 The API will be available at:
 
+```
 http://127.0.0.1:8000
+```
 
 Interactive documentation:
 
+```
 http://127.0.0.1:8000/docs
+```
+
+---
 
 # API Endpoint
 
 ### Get customer with orders
 
+```
 GET /customers/{customer_id}
+```
 
-Example:
+Example request:
 
+```
 GET /customers/1
+```
 
-Response:
+Example response:
 
+```json
 {
-"id": 1,
-"first_name": "John",
-"surname": "Smith",
-"email": "john.smith@example.com",
-"status": "active",
-"created_at": "2026-01-05",
-"orders": [...]
+  "id": 1,
+  "first_name": "John",
+  "surname": "Smith",
+  "email": "john.smith@example.com",
+  "status": "active",
+  "created_at": "2026-01-05",
+  "orders": []
 }
+```
 
 If the customer does not exist:
 
+```
 404 Customer not found
+```
+
+---
 
 # Data Export Script
 
-Run:
+Run the export script:
 
+```bash
 python scripts/export_active_customers.py
+```
 
 The script:
 
 1. Extracts all **active customers**
 2. Combines `first_name` and `surname` into a single `name`
 3. Calculates `total_value = quantity × unit_price`
-4. Exports results to:
+4. Exports results to CSV
 
+The output file is created at:
+
+```
 output/active_customers_orders.csv
+```
+
+---
 
 # Design Decisions
 
 ### SQLite
 
-SQLite was chosen to keep the project lightweight and easy to run without additional infrastructure.
+SQLite was chosen to keep the project lightweight and easy to run without requiring additional infrastructure.
 
 ### FastAPI
 
-FastAPI provides a modern, fast, and well-structured framework for building REST APIs with automatic documentation.
+FastAPI provides a modern and efficient framework for building REST APIs with automatic interactive documentation.
 
 ### SQLAlchemy
 
-SQLAlchemy was used as the ORM to provide clear database models and relationships between customers and orders.
+SQLAlchemy was used as the ORM to define database models and manage relationships between customers and orders.
+
+---
 
 # Possible Improvements
 
@@ -143,6 +187,8 @@ The following improvements could be added in future:
 - Pagination and filtering for API endpoints
 - Environment variable configuration
 - CI/CD pipeline
+
+---
 
 # Summary
 
