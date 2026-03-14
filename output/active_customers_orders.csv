@@ -1,0 +1,34 @@
+customer_id,name,email,product_name,quantity,unit_price,total_value
+1,John Smith,john.smith@example.com,Laptop,1,899.99,899.99
+1,John Smith,john.smith@example.com,Wireless Mouse,2,24.99,49.98
+1,John Smith,john.smith@example.com,Docking Station,1,119.99,119.99
+3,Michael Brown,michael.brown@example.com,Mechanical Keyboard,1,79.99,79.99
+3,Michael Brown,michael.brown@example.com,USB-C Hub,1,34.5,34.5
+3,Michael Brown,michael.brown@example.com,Monitor Stand,1,42.99,42.99
+5,David Wilson,david.wilson@example.com,Monitor,2,179.5,359.0
+5,David Wilson,david.wilson@example.com,HDMI Cable,3,9.99,29.97
+5,David Wilson,david.wilson@example.com,Keyboard Wrist Rest,1,16.99,16.99
+6,Olivia Thomas,olivia.thomas@example.com,Webcam,1,49.99,49.99
+6,Olivia Thomas,olivia.thomas@example.com,Headset,1,59.99,59.99
+6,Olivia Thomas,olivia.thomas@example.com,Microphone,1,89.5,89.5
+8,Sophia Harris,sophia.harris@example.com,Desk Lamp,2,22.5,45.0
+8,Sophia Harris,sophia.harris@example.com,Notebook Stand,1,31.25,31.25
+8,Sophia Harris,sophia.harris@example.com,LED Strip Lights,2,17.25,34.5
+10,Isabella Thompson,isabella.thompson@example.com,External SSD,1,129.99,129.99
+10,Isabella Thompson,isabella.thompson@example.com,USB Drive,4,14.99,59.96
+10,Isabella Thompson,isabella.thompson@example.com,Portable Monitor,1,199.0,199.0
+11,Matthew Garcia,matthew.garcia@example.com,Printer,1,199.99,199.99
+11,Matthew Garcia,matthew.garcia@example.com,Ink Cartridge,2,29.99,59.98
+11,Matthew Garcia,matthew.garcia@example.com,Paper Pack,5,6.99,34.95
+13,Ethan Robinson,ethan.robinson@example.com,Office Chair,1,249.99,249.99
+13,Ethan Robinson,ethan.robinson@example.com,Footrest,1,39.99,39.99
+14,Charlotte Clark,charlotte.clark@example.com,Tablet,1,329.99,329.99
+14,Charlotte Clark,charlotte.clark@example.com,Tablet Cover,1,19.99,19.99
+16,Amelia Lewis,amelia.lewis@example.com,Smartphone,1,699.99,699.99
+16,Amelia Lewis,amelia.lewis@example.com,Phone Charger,2,18.99,37.98
+17,Benjamin Lee,benjamin.lee@example.com,Bluetooth Speaker,1,89.99,89.99
+17,Benjamin Lee,benjamin.lee@example.com,Power Bank,1,44.99,44.99
+19,Henry Hall,henry.hall@example.com,Router,1,119.99,119.99
+19,Henry Hall,henry.hall@example.com,Ethernet Cable,3,7.99,23.97
+20,Evelyn Allen,evelyn.allen@example.com,Coffee Maker,1,149.99,149.99
+20,Evelyn Allen,evelyn.allen@example.com,Coffee Filters,2,8.49,16.98
